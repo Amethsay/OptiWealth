@@ -1,0 +1,43 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --fg-primary: #0A2540; /* Deep Fintech Blue */
+  --fg-secondary: #00D09C; /* Growth Green */
+  --fg-bg: #F8F9FA;
+  --fg-text: #1A1A1A;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--fg-bg);
+  color: var(--fg-text);
+}
+
+.bg-primary-custom {
+  background-color: var(--fg-primary) !important;
+}
+
+.text-primary-custom {
+  color: var(--fg-primary) !important;
+}
+
+.text-success-custom {
+  color: var(--fg-secondary) !important;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background: white;
+  transition: transform 0.2s;
+}
+
+.card-custom:hover {
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: var(--fg-secondary) !important;
+}
